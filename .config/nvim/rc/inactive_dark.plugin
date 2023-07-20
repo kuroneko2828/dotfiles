@@ -1,0 +1,2 @@
+" 非アクティブウィンドウのハイライトグループを設定
+autocmd ColorScheme * hi InactiveWindow guibg=#444444

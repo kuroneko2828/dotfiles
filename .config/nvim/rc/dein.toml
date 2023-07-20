@@ -1,0 +1,87 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+on_ft = ['markdown', 'pandoc.markdown', 'rmd']
+build = 'sh -c "cd app && yarn install"'
+
+
+#nerdtree
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+
+
+#colorscheme
+[[plugins]]
+repo = 'haishanh/night-owl.vim'
+
+[[plugins]]
+repo = 'morhetz/gruvbox'
+
+[[plugins]]
+repo = 'joshdick/onedark.vim'
+
+[[plugins]]
+repo = 'https://github.com/underson666666/color-scheme-switcher-over-time'
+
+
+#tex
+[[plugins]]
+repo = 'lervag/vimtex'
+hook_add = """
+let g:vimtex_compiler_latexmk_engines = { '_' : '-pdfdvi' }
+let g:vimtex_compiler_latexmk = {
+\ 'continuous': 1,
+\}
+"""
+
+
+
+#change to alphabet input when normal mode
+[[plugins]]
+repo = 'brglng/vim-im-select'
+hook_add = '''
+let g:im_select_default = 'com.apple.inputmethod.Kotoeri.RomajiTyping.Roman'
+'''
+
+
+[[plugins]]
+repo = 'nvim-treesitter/nvim-treesitter'
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+set list listchars=tab:\¦\ 
+'''
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+# not delete quotation
+[[plugins]]
+repo = 'elrz/vim-json'
+hook_add = '''
+let g:vim_json_syntax_conceal = 0
+set conceallevel=0
+'''
+
+
+

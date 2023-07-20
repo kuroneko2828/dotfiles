@@ -1,0 +1,26 @@
+let day_scheme = 'onedark'
+let night_scheme = 'night-owl'
+
+let day_mode = 'dark'
+let night_mode = 'dark'
+
+let beggining_daytime = 0
+let end_daytime = 24
+
+
+
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+if beggining_daytime <= strftime("%H") && strftime("%H") <= end_daytime
+  let my_mode = day_mode
+  let my_scheme = day_scheme
+else
+  let my_mode = night_mode
+  let my_scheme = night_scheme
+endif
+
+execute 'set background=' . my_mode
+execute 'colorscheme ' . my_scheme
+let g:airline_theme='onedark'

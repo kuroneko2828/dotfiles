@@ -1,0 +1,18 @@
+env:
+  TERM: alacritty
+
+window:
+  padding:
+    x: 10
+    y: 10
+  startup_mode: Maximized
+  opacity: 0.95
+
+font:
+  normal:
+    family: MesloLGL Nerd Font
+  size: 20
+
+mouse:
+  hide_when_typing: true
+

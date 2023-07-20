@@ -1,0 +1,25 @@
+[user]
+	name = kuroneko2828
+	email = nekonekonya.kuro@gmail.com
+[core]
+	excludesfile = /Users/ishikawa/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/ishikawa/.stCommitMsg
+[init]
+	defaultBranch = main
+
+[alias]
+	s = status
+	sw = switch
+	a = add
+	c = commit
+	ps = push
+	pl = pull
+	m = merge
+	b = branch
+	A = add -A

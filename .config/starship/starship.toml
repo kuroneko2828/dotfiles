@@ -1,0 +1,32 @@
+# Use custom format
+format = "$custom[ ](fg:yellow)$all"
+
+[[battery.display]]
+threshold = 10
+style = 'bold red'
+
+[[battery.display]]
+threshold = 30
+style = 'bold yellow'
+
+[character]
+error_symbol = '[✘](bold red)'
+
+[directory]
+truncation_length = 2
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[time]
+disabled = false
+format = '[\[ $time \]]($style) '
+time_format = '%H:%M'
+
+[custom.sleep]
+command = "issleep"
+when = "test $(issleep) = 1"
+format = "[󰛨 ](red)"
