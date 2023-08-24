@@ -45,12 +45,12 @@ let g:vimtex_compiler_latexmk = {
 
 
 
-#change to alphabet input when normal mode
-[[plugins]]
-repo = 'brglng/vim-im-select'
-hook_add = '''
-let g:im_select_default = 'com.apple.inputmethod.Kotoeri.RomajiTyping.Roman'
-'''
+##change to alphabet input when normal mode
+#[[plugins]]
+#repo = 'brglng/vim-im-select'
+#hook_add = '''
+#let g:im_select_default = 'com.apple.inputmethod.Kotoeri.RomajiTyping.Roman'
+#'''
 
 
 [[plugins]]
@@ -60,6 +60,7 @@ repo = 'nvim-treesitter/nvim-treesitter'
 repo = 'Yggdroot/indentLine'
 hook_add = '''
 set list listchars=tab:\¦\ 
+let g:vim_json_conceal = 0
 '''
 
 [[plugins]]
@@ -74,14 +75,3 @@ let g:airline_powerline_fonts = 1
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
-
-# not delete quotation
-[[plugins]]
-repo = 'elrz/vim-json'
-hook_add = '''
-let g:vim_json_syntax_conceal = 0
-set conceallevel=0
-'''
-
-
-

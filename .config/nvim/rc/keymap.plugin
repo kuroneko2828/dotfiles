@@ -1,3 +1,2 @@
 nnoremap U <c-r>
 nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap :vn :vnew

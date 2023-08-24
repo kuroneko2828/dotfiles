@@ -1,1 +1,0 @@
-command! -nargs=* -complete=command Vn vnew <args>

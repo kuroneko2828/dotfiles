@@ -1,5 +1,6 @@
 # Use custom format
-format = "$custom[ ](fg:yellow)$all"
+#format = "$custom[ ](fg:yellow)$all"
+format = "[ ](fg:yellow)$all"
 
 [[battery.display]]
 threshold = 10
@@ -26,7 +27,7 @@ disabled = false
 format = '[\[ $time \]]($style) '
 time_format = '%H:%M'
 
-[custom.sleep]
-command = "issleep"
-when = "test $(issleep) = 1"
-format = "[󰛨 ](red)"
+# [custom.sleep]
+# command = "issleep"
+# when = "test $(issleep) = 1"
+# format = "[󰛨 ](red)"
