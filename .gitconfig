@@ -24,3 +24,5 @@
 	b = branch
 	A = add -A
 	d = diff
+	ua = restore --staged
+	UA = restore --staged .
