@@ -1,4 +1,4 @@
-#!bin/bash
+#!bin/zsh
 function create_all_links_in_dir(){
     # $1: app name
     # $2: dir name
@@ -15,8 +15,8 @@ fi
 
 echo 'create symbolic link'
 # single files
-ln -fs ${PWD}/.bashrc ${HOME}/.bashrc
-ln -fs ${PWD}/.bash_profile ${HOME}/.bash_profile
+ln -fs ${PWD}/.zshrc ${HOME}/.zshrc
+ln -fs ${PWD}/.zprofile ${HOME}/.zprofile
 ln -fs ${PWD}/.gitconfig ${HOME}/.gitconfig
 
 # config dir
@@ -27,11 +27,11 @@ if [[ ! -d ${config_dir}/alacritty ]]; then
 fi
 create_all_links_in_dir alacritty ${config_dir}
 
-# bash
-if [[ ! -d ${config_dir}/bash ]]; then
-    mkdir ${config_dir}/bash
+# zsh
+if [[ ! -d ${config_dir}/zsh ]]; then
+    mkdir ${config_dir}/zsh
 fi
-create_all_links_in_dir bash ${config_dir}
+create_all_links_in_dir zsh ${config_dir}
 
 # nvim
 if [[ ! -d ${config_dir}/nvim ]]; then

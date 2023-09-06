@@ -8,14 +8,13 @@ export PATH=$HOME/command:$PATH
 export PATH="/usr/local/bin:$PATH"
 export DENO_INSTALL="/Users/ishikawa/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
-export PS1="\[\033[36m\]\u: \[\033[32m\]\W\$\[\033[m\] "
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
-source ~/.config/bash/alias.sh
-source ~/.config/bash/git-completion.bash
+source ~/.config/zsh/alias.sh
+source ~/.config/zsh/git-completion.sh
 # starship
-eval "$(starship init bash)"
+eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
