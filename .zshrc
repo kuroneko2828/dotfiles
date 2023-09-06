@@ -14,7 +14,7 @@ eval "$(goenv init -)"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
 source ~/.config/zsh/alias.sh
-source ~/.config/zsh/git-completion.sh
+source ~/.config/zsh/git-completion.zsh
 # starship
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml

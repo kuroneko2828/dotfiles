@@ -7,3 +7,5 @@ eval "$(rbenv init -)"
 if [ -f ~/.zshrc ] ; then
 . ~/.zshrc
 fi
+
+eval "$(/opt/homebrew/bin/brew shellenv)"

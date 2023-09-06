@@ -1,6 +1,6 @@
 unalias -a
 alias nv='nvim'
-alias sbp='source ~/.bash_profile'
+alias zp='source ~/.zprofile'
 alias py='python'
 alias g='git'
 alias md='mkdir'
