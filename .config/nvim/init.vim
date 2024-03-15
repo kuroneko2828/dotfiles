@@ -4,6 +4,10 @@ set t_Co=256
 set wildoptions=pum
 set iminsert=0
 set splitright
+set number
+set tabstop=4
+set shiftwidth=4
+" set foldmethod=indent
 
 set clipboard+=unnamed
 
