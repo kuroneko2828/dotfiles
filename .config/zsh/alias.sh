@@ -1,6 +1,6 @@
 unalias -a
 alias nv='nvim'
-alias zp='source ~/.zprofile'
+alias szp='source ~/.zprofile'
 alias py='python'
 alias g='git'
 alias md='mkdir'
@@ -25,4 +25,4 @@ alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias o='open'
 alias p='pwd'
 alias pc='pwdc'
-alias ct='ctags -R -f .tags'
+alias ct='ctags -f .tags'

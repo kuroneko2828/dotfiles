@@ -26,3 +26,5 @@
 	d = diff
 	ua = restore --staged
 	UA = restore --staged .
+[merge]
+	tool = nvimdiff
