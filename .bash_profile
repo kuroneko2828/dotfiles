@@ -13,3 +13,5 @@ if [ -f '/Users/ishikawa/google-cloud-sdk/path.bash.inc' ]; then . '/Users/ishik
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ishikawa/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/ishikawa/google-cloud-sdk/completion.bash.inc'; fi
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
