@@ -75,3 +75,9 @@ let g:airline_powerline_fonts = 1
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'nvim-lua/plenary.nvim'
+
+[[plugins]]
+repo = 'epwalsh/obsidian.nvim'
