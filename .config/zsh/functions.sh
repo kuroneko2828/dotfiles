@@ -66,3 +66,8 @@ function gcloud_logout() {
     gcloud auth revoke
     echo y | gcloud auth application-default revoke
 }
+
+# スプレッドシートの列データをリストに変換
+function spreadsheet_to_list() {
+    pbpaste | awk '{printf "\x27"$0"\x27,"}' | sed 's/,$/\n/' | pbcopy
+}
