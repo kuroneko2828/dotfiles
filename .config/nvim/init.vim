@@ -5,15 +5,20 @@ set wildoptions=pum
 set iminsert=0
 set splitright
 set number
-set tabstop=4
-set shiftwidth=4
+set tags=./.tags;,.tags;
 " set foldmethod=indent
 
 set clipboard+=unnamed
 
-let g:denops#deno = '/Users/ishikawa/.deno/bin/deno'
+" let g:denops#deno = '/Users/ishikawa/.deno/bin/deno'
 
-
+" let s:dein_dir = expand('~/.cache/dein')
+" let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
+" 
+" if !isdirectory(s:dein_repo_dir)
+"   execute '!git clone <https://github.com/Shougo/dein.vim>' s:dein_repo_dir
+" endif
+" execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 
 if filereadable(expand('~/.config/nvim/rc/install_dein.plugin'))
 	source ~/.config/nvim/rc/install_dein.plugin
@@ -37,6 +42,17 @@ if filereadable(expand('~/.config/nvim/rc/command_alias.plugin'))
 	source ~/.config/nvim/rc/command_alias.plugin
 endif
 
+if filereadable(expand('~/.config/nvim/rc/tab.plugin'))
+	source ~/.config/nvim/rc/tab.plugin
+endif
+
+" if filereadable(expand('~/.config/nvim/rc/after_save.plugin'))
+" 	source ~/.config/nvim/rc/after_save.plugin
+" endif
+
 " if filereadable(expand('~/.config/nvim/rc/inactive_dark.plugin'))
 " 	source ~/.config/nvim/rc/inactive_dark.plugin
 " endif
+"
+
+"----------------------------------------------------------

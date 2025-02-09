@@ -19,6 +19,7 @@
 	a = add
 	c = commit
 	ps = push
+    pso = "!f() { git push origin $(git symbolic-ref --short HEAD); }; f"
 	pl = pull
 	m = merge
 	b = branch
@@ -26,3 +27,7 @@
 	d = diff
 	ua = restore --staged
 	UA = restore --staged .
+
+[merge]
+	tool = nvimdiff
+	cmd = nvim -c '2wincmd w | diffthis | 3wincmd w | diffthis | 1wincmd w | wincmd J' -O $MERGED $LOCAL $REMOTE

@@ -34,3 +34,10 @@ disabled = true
 # command = "issleep"
 # when = "test $(issleep) = 1"
 # format = "[󰛨 ](red)"
+
+[custom.gcloud_project]
+description = "Display the current gcloud project name"
+command = "echo ${GOOGLE_PROJECT_NAME}"
+format = "[󱇶 $output ]($style)"
+style = "blue"
+when = "test -n ${GOOGLE_PROJECT_NAME}"
