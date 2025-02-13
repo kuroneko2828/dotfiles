@@ -10,7 +10,7 @@ function create_all_links_in_dir(){
 
 config_dir=$HOME/.config
 if [[ ! -d ${config_dir} ]]; then
-    mkdir {$config_dir}
+    mkdir ${config_dir}
 fi
 
 echo 'create symbolic link'
