@@ -1,0 +1,55 @@
+{
+  "name": "Icy Blue Theme",
+  "$schema": "vscode://schemas/color-theme",
+  "colors": {
+    "editor.background": "#F0F8FF",
+    "editor.foreground": "#000080",
+    "editorLineNumber.foreground": "#87CEEB",
+    "editorCursor.foreground": "#4169E1",
+    "editor.selectionBackground": "#B0E0E6",
+    "editor.selectionHighlightBackground": "#E0FFFF",
+    "editorIndentGuide.background": "#87CEFA",
+    "statusBar.background": "#B0E0E6",
+    "statusBar.foreground": "#000080",
+    "activityBar.background": "#F0F8FF",
+    "sideBar.background": "#F0F8FF",
+    "sideBarTitle.foreground": "#000080"
+  },
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": "comment",
+      "settings": {
+        "foreground": "#4682B4"
+      }
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#1E90FF"
+      }
+    },
+    {
+      "name": "Variable",
+      "scope": "variable",
+      "settings": {
+        "foreground": "#000080"
+      }
+    },
+    {
+      "name": "Function",
+      "scope": "entity.name.function",
+      "settings": {
+        "foreground": "#4169E1"
+      }
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "settings": {
+        "foreground": "#00CED1"
+      }
+    }
+  ]
+}
