@@ -5,7 +5,7 @@ source ~/.config/zsh/functions.sh
 source ~/.config/zsh/write_log.sh
 source ~/.config/zsh/zhooks/zhooks.plugin.zsh
 source ~/.config/zsh/gcloud_project.sh
-source ~/.config/zsh/cat_background.sh
+source ~/.config/zsh/matatabi.sh
 
 # internal-use
 if [ -f ~/.config/zsh/wed_functions.sh ]; then

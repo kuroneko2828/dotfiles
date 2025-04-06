@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # 猫の画像をダウンロード
 download_cat_image() {
     local output_file="$1"
@@ -20,7 +19,7 @@ EOF
 }
 
 # メイン処理
-main() {
+call_cat() {
     # 一時ファイルのディレクトリを作成
     TEMP_DIR=$(mktemp -d)
 
@@ -29,14 +28,9 @@ main() {
 
     # 猫の画像をダウンロード
     if download_cat_image "$CAT_IMAGE"; then
-        # iTerm2の背景に設定
-        if set_iterm2_background "$CAT_IMAGE"; then
-            echo "Successfully set cat background image: $CAT_IMAGE"
-        else
-            echo "Failed to set background image"
-        fi
+        set_iterm2_background "$CAT_IMAGE"
     else
-        echo "Failed to download cat image"
+        echo "猫は来てくれなかった..."
     fi
 
     # スクリプト終了時に一時ファイルをクリーンアップ
@@ -45,6 +39,6 @@ main() {
 
 cd() {
     builtin cd "$@"
-    main  >/dev/null 2>&1 &
+    call_cat >/dev/null 2>&1 &
     disown
 }
