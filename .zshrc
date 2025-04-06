@@ -35,3 +35,5 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 export PATH="${HOME}/.asdf/shims/npm:$PATH"
 export PATH="$(npm prefix -g)/bin:$PATH"
+# homebrew
+eval $(/opt/homebrew/bin/brew shellenv)
